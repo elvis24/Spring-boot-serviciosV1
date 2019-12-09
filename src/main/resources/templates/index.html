@@ -21,6 +21,7 @@
         <table class="table">
             <thead>
             <tr>
+                <th>ID</th>
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>Dirección</th>
@@ -31,6 +32,7 @@
             </thead>
             <tbody>
             <tr th:each="persona : ${list}">
+                <td th:text="${persona.id}">
                 <td th:text="${persona.nombre}">
                 <td th:text="${persona.apellido}">
                 <td th:text="${persona.direccion}">
